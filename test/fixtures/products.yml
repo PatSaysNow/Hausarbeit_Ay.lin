@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  product_id: MyString
+  integer;producttitle: MyString
+  integer;: MyString
+  productrating: MyString
+  decimal;: MyString
+  picture: MyString
+  integer: MyString
+
+two:
+  name: MyString
+  product_id: MyString
+  integer;producttitle: MyString
+  integer;: MyString
+  productrating: MyString
+  decimal;: MyString
+  picture: MyString
+  integer: MyString

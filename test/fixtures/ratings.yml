@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  rating_id: MyString
+  integer;: MyString
+  ratingrating: MyString
+  decimal: MyString
+
+two:
+  name: MyString
+  rating_id: MyString
+  integer;: MyString
+  ratingrating: MyString
+  decimal: MyString
