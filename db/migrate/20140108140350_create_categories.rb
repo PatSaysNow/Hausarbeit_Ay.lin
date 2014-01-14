@@ -2,9 +2,7 @@ class CreateCategories < ActiveRecord::Migration
   def change
     create_table :categories do |t|
       t.string :name
-      t.string :categoriename
-      t.string :integer
-
+      t.string :top_category
       t.timestamps
     end
   end

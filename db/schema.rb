@@ -15,30 +15,23 @@ ActiveRecord::Schema.define(version: 20140108140606) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
-    t.string   "categoriename"
-    t.string   "integer"
+    t.string   "top_category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "products", force: true do |t|
     t.string   "name"
-    t.string   "product_id"
-    t.string   "integer"
-    t.string   "product_title"
-    t.string   "productrating"
-    t.string   "decimal"
-    t.string   "picture"
+    t.integer  "product_id"
+    t.string   "title"
+    t.float    "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "ratings", force: true do |t|
-    t.string   "name"
-    t.string   "rating_id"
-    t.string   "integer"
-    t.string   "ratingrating"
-    t.string   "decimal"
+    t.integer  "product_id"
+    t.float    "vote"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
