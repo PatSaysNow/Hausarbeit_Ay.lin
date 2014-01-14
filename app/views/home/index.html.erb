@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<div id="container" style="width:500px">
-
-<div id="header" style="background-color:#db7c78;">
-<h1 style="margin-bottom:0;">Ay.lin</h1></div>
-
-<div id="menu" style="background-color:#82c496;height:200px;width:100px;float:right;">
-<b>Menu</b><br>
-HTML<br>
-CSS<br>
-JavaScript</div>
-
-<div id="content" style="background-color:#f7f6f2;height:200px;width:400px;float:left;">
-Content goes here</div>
-
-<div id="footer" style="background-color:#ededed;clear:both;text-align:center;">
-Copyright © Pat&Aylin</div>
-
+<div class="jumbotron">
+<h1>Willkommen auf Ay.lin</h1>
+<p class="lead">
+    Hier kannst Du deine slebstgemachten Sachen hochladen!
+</p>
+<%= link_to "Jetzt Anmelden", '#', class: "btn btn-lg btn-success" %>
 </div>
- 
-</body>
-</html>
+
+<div class="row marketing">
+<div class="col-lg-6">
+    <h4>Made with Rails</h4>
+    <p>Diese App ist mit Ruby on Rails entwickelt</p>
+    <p><%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %></p>
+</div>
+<div class="col-lg-6">
+    <h4>Made in Berlin</h4>
+    <p>Entstanden an der HWR Berlin</p>
+    <p><%= link_to image_tag("hwr_logo.jpg", alt: "HWR"), 'http://www.hwr-berlin.de/' %></p>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+</div>
+</div>
