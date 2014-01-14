@@ -13,7 +13,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 <body>
-<<<<<<< HEAD
+
 <div class="container">
 	<div class="header">
     <ul class="nav nav-pills pull-right">
@@ -23,8 +23,8 @@
     <li>
         <%= link_to "About", :controller => "home", :action => "about" %>
     </li>
-      <li>
-        <%= link_to "Alle Produkte", :controller => "home", :action => "about" %>
+         <li>
+        <%= link_to "Alle Produkte", :controller => "home", :action => "alleprodukte" %>
     </li>
       <li>
         <%= link_to "Schmuck", :controller => "home", :action => "about" %>
@@ -35,13 +35,11 @@
       <li>
         <%= link_to "Kinder", :controller => "home", :action => "about" %>
     </li>
-    </ul>
+     </ul>
     <h3 class="text-muted">Ay.lin</h3>
 </div>
-=======
 
 <%= render 'layouts/messages' %>
->>>>>>> b534736971b43e0368e4b920a2c301ab46750bf1
 <%= yield %>
 <div class="footer">
     <p>&copy; Pat & Aylin</p>
