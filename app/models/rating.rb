@@ -8,4 +8,5 @@ class Rating < ActiveRecord::Base
    validates :vote
       				numericality:{greater_than_or_equal_to: 0.0},
 	 						presence: true
-end
+	 						#kommentar
+	 					end
