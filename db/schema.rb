@@ -38,14 +38,10 @@ ActiveRecord::Schema.define(version: 20140108140606) do
 
   create_table "users", force: true do |t|
     t.string   "name"
-    t.string   "usaername"
-    t.string   "integer"
-    t.string   "first"
-    t.string   "last"
+    t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "password"
-    t.string   "e"
-    t.string   "mail"
-    t.string   "adress"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
