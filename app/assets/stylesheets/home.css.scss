@@ -3,10 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 b/* Space out content a bit */
-body {
-  padding-top: 20px;
+body { background-color:#C6E2FF;
+ padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #b7d1c4;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -38,6 +37,8 @@ body {
 
 /* Customize container */
 @media (min-width: 768px) {
+position: relative;
+  float: left;
   .container {
     max-width: 730px;
   }
@@ -63,7 +64,10 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
-
+img {
+  width:200px;
+  height:200px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -82,3 +86,8 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+
+
