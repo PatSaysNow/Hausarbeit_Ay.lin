@@ -85,9 +85,10 @@ img {
   .jumbotron {
     border-bottom: 0;
   }
+
 }
 
-
-
-
+.vertical .carousel-inner {
+  height: 100%;
+}
 
