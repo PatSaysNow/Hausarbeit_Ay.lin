@@ -1,52 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>HausarbeitAyLin</title>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-<body>
-
-<div class="container">
-	<div class="header">
-    <div class="navbar-header">
-  
+  <div class="header">
     <ul class="nav nav-pills pull-right">
     <li class="active">
-        <%= link_to "Home", :controller => "home", :action => "index" %>
+        <%= link_to "Home", home_index_path %>
     </li>
-    <li>
-        <%= link_to "About", :controller => "home", :action => "about" %>
-    </li>
-         <li>
-        <%= link_to "Alle Produkte", :controller => "home", :action => "alleprodukte" %>
-    </li>
+<% if user_signed_in? %>
+  <li>
+    <%= link_to 'Abmelden', destroy_user_session_path, :method=>'delete' %>
+  </li>
+  <li>
+    <%= link_to 'Angemeldet als ' + current_user.username, edit_user_registration_path %>
+  </li>
+<% else %>
+  <li>
+    <%= link_to 'Anmelden', new_user_session_path %>
+  </li>
+  <li>
+    <%= link_to 'Registrieren', new_user_registration_path %>
+  </li>
+<% end %>
       <li>
-        <%= link_to "Schmuck", :controller => "home", :action => "about" %>
+        <%= link_to "Kaufen", home_about_path %>
     </li>
-      <li>
-        <%= link_to "Taschen", :controller => "home", :action => "about" %>
+        <li>
+        <%= link_to "Verkaufen", home_about_path %>
     </li>
-      <li>
-        <%= link_to "Kinder", :controller => "home", :action => "about" %>
-    </li>
-     </ul>
-    <h3 class="text-muted">Ay.lin</h3>
+        <li>
+        <%= link_to "Impressum", home_about_path %>
+    </ul>
+    <h3 class="text-muted">Willkommen auf Ay.lin</h3>
 </div>
-
-<%= render 'layouts/messages' %>
-<%= yield %>
-<div class="footer">
-    <p>&copy; Pat & Aylin</p>
-</div>
-</div> <!-- /container -->
-
-</body>
-</html>
