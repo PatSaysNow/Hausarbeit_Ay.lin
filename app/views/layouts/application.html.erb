@@ -15,25 +15,7 @@
 <body>
 
 <div class="container">
-	<div class="header">
-    <ul class="nav nav-pills pull-right">
-    <li class="active">
-        <%= link_to "Home", :controller => "home", :action => "index" %>
-    </li>
-    <li>
-        <%= link_to "Anmelden", :controller => "home", :action => "about" %>
-    </li>
-      <li>
-        <%= link_to "Kaufen", :controller => "home", :action => "about" %>
-    </li>
-        <li>
-        <%= link_to "Verkaufen", :controller => "home", :action => "about" %>
-    </li>
-        <li>
-        <%= link_to "Impressum", :controller => "home", :action => "about" %>
-    </ul>
-    <h3 class="text-muted">Willkommen auf Ay.lin</h3>
-</div>
+<%= render 'layouts/navigation' %>
 
 <%= render 'layouts/messages' %>
 <%= yield %>
