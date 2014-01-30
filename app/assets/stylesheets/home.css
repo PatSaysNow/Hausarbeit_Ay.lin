@@ -1,7 +1,7 @@
 
-b/* Space out content a bit */
+/* Space out content a bit */
 body {
-  background-color: #C6E2FF !important;
+  background: #C6E2FF;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -49,6 +49,7 @@ position: relative;
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
+  height: 230px;
   border-bottom: 1px solid #77777;
 }
 .jumbotron .btn {

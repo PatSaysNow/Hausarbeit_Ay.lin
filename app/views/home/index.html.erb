@@ -1,10 +1,12 @@
 <div class="jumbotron">
-	<link type="text/css" rel="stylesheet" href="home.css"/>
+	<link type="text/css" rel="stylesheet" href="../../assets/home.css"/>
 <h2> Hier kannst Du deine selbst gebastelten Sachen hochladen!</h2>
 <p class="lead">
     Dafür brauchst Du dich nur anzumelden
 </p>
-<%= link_to "Jetzt Anmelden", '#', class: "btn btn-lg btn-success" %>
+<%= link_to "Jetzt Anmelden", new_user_session_path , class: "btn btn-lg btn-success" %>
+
+
 </div>
 
 <div class="row marketing">
@@ -21,7 +23,7 @@
 	<div class="carousel-inner">
 				
 		<div class="item active">
-			<img src=<%= link_to image_tag("Tasche.jpg", alt: "Gallery") %>
+			<img src="<%= link_to image_tag("Tasche.jpg", alt: "Gallery") %>
 		</div>
 					
 		<div class="item ">
