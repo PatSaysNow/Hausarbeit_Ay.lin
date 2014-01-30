@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 
 gem 'devise'
+
+gem 'carrierwave'
 	
 end
 

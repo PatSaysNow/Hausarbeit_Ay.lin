@@ -2,6 +2,8 @@ class Product < ActiveRecord::Base
 	belongs_to :user
 	has_many :ratings
 	belongs_to :categoriers
+	rails generate migration AddImageToPaintings image:string
+	mount_uploader :image, ImageUploader
 
 validates :name,
 					presence: true
