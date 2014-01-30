@@ -3,6 +3,14 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>Result</title>
+		<%= form_for(@products, :html => {:multipart => true}) do |f| %>
+		<div class="field">
+  <%= f.file_field :image %>
+</div>
+<div class="field">
+  <%= f.label :remote_image_url, "or image URL" %><br />
+  <%= f.text_field :remote_image_url %>
+</div>
 	</head>
 	<body>
 		<div id="header">

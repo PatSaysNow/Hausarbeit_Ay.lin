@@ -34,6 +34,7 @@ group :doc do
 gem 'devise'
 
 gem 'carrierwave'
+gem 'mini_magick'
 	
 end
 
