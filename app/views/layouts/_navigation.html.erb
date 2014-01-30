@@ -1,8 +1,11 @@
   <div class="header">
     <ul class="nav nav-pills pull-right">
-    <li class="active">
+      <style type="text/css">
+      .header li:hover{font-size:16px;}
+      </style>
+   <li>
         <%= link_to "Home", home_index_path %>
-    </li>
+</li>
 <% if user_signed_in? %>
   <li>
     <%= link_to 'Abmelden', destroy_user_session_path, :method=>'delete' %>
@@ -22,10 +25,10 @@
         <%= link_to "Kaufen", home_about_path %>
     </li>
         <li>
-        <%= link_to "Verkaufen", home_about_path %>
+        <%= link_to "Verkaufen", home_verkaufen_path %>
     </li>
-        <li>
-        <%= link_to "Impressum", home_about_path %>
+  
     </ul>
-    <h3 class="text-muted">Willkommen auf Ay.lin</h3>
+    <img style="height:81px; widht:155px;" src="<%= link_to image_tag("LOGO.png", alt: "Gallery")%>
 </div>
+<link type="text/css" rel="stylesheet" href="../../assets/home.css"/>
