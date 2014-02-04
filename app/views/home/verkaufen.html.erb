@@ -1,7 +1,18 @@
 <h1>File Upload</h1>
-<%= start_form_tag ({:action => 'uploadFile'}, 
-                        :multipart => true) %>
-<p><label for="upload_file">Select File</label> : 
-<%= file_field 'upload', 'datafile' %></p>
-<%= submit_tag "Upload" %>
-<%= end_form_tag %>
+<%= form_for Product do |f| %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
+    <div class="field">
+      <%= f.label :remote_image_url, "or image URL" %><br />
+      <%= f.text_field :remote_image_url %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

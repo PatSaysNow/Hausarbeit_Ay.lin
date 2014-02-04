@@ -1,4 +1,4 @@
-  <div class="header">
+   <div class="header">
     <ul class="nav nav-pills pull-right">
       <style type="text/css">
       .header li:hover{font-size:16px;}
@@ -29,6 +29,6 @@
     </li>
   
     </ul>
-    <img style="height:81px; widht:155px;" src="<%= link_to image_tag("LOGO.png", alt: "Gallery")%>
+    <%= link_to image_tag("LOGO.png", alt: "Gallery"), :action => 'index'%>
 </div>
 <link type="text/css" rel="stylesheet" href="../../assets/home.css"/>
