@@ -1,4 +1,6 @@
 HausarbeitAyLin::Application.routes.draw do
+  resources :produktes
+
   devise_for :users
   get "home/index"
   get "home/about"
