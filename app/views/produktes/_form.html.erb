@@ -1,4 +1,4 @@
-<%= form_for(@produkte) do |f| %>
+<%= form_for(@produkte,:html => {:multipart => true}) do |f| %>
   <% if @produkte.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@produkte.errors.count, "error") %> prohibited this produkte from being saved:</h2>
@@ -15,6 +15,7 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

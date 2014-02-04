@@ -3,11 +3,11 @@ class HomeController < ApplicationController
   end
 
   def new
-	  @product = Product.new
+	  @product = Produkte.new
   end
 
   def create
-	  @product = Product.new(painting_params)
+	  @product = Produkte.new(painting_params)
 
 	  respond_to do |format|
 		  if @product.save
@@ -21,7 +21,7 @@ class HomeController < ApplicationController
   end
 
 def painting_params
-  params.require(:@product).permit(:name, :image, :remote_image_url)
+  params.require(:produkte).permit(:name, :image, :remote_image_url)
 end
 
   def about

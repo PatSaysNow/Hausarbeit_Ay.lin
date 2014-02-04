@@ -1,5 +1,5 @@
 <h1>File Upload</h1>
-<%= form_for Product do |f| %>
+<%= form_for(@produktes,:html => {:multipart => true}) do |f| %>
 
     <div class="field">
       <%= f.label :name %><br>
@@ -12,6 +12,13 @@
       <%= f.label :remote_image_url, "or image URL" %><br />
       <%= f.text_field :remote_image_url %>
     </div>
+    <div class="field">
+  <%= f.file_field :image %>
+</div>
+<div class="field">
+  <%= f.label :remote_image_url, "or image URL" %><br />
+  <%= f.text_field :remote_image_url %>
+</div>
     <div class="actions">
       <%= f.submit %>
     </div>

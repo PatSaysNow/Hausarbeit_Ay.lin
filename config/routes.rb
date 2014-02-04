@@ -2,10 +2,13 @@ HausarbeitAyLin::Application.routes.draw do
   resources :produktes
 
   devise_for :users
+
+  resources :home
+
   get "home/index"
   get "home/about"
   get "home/kaufen"
-  get "home/verkaufen"
+  get "home/verkaufen" => 'home#new'
   get "home/impressum"
   #get  "home/alleprodukte"
   # The priority is based upon order of creation: first created -> highest priority.
