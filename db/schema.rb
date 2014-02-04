@@ -20,15 +20,15 @@ ActiveRecord::Schema.define(version: 20140204111543) do
     t.datetime "updated_at"
   end
 
-  #create_table "products", force: true do |t|
-   # t.string   "name"
-  #  t.integer  "product_id"
-   # t.string   "title"
-    #t.float    "rating"
-    #t.datetime "created_at"
-    #t.datetime "updated_at"
-    #t.string   "image"
-  #end
+  create_table "products", force: true do |t|
+    t.string   "name"
+    t.integer  "product_id"
+    t.string   "title"
+    t.float    "rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image"
+  end
 
   create_table "produktes", force: true do |t|
     t.string   "name"
