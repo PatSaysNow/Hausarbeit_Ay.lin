@@ -17,6 +17,10 @@ class ProduktesController < ApplicationController
     @produkte = Produkte.new
   end
 
+  def painting_params
+  params.require(:produkte).permit(:name, :image, :remote_image_url)
+  end
+
   # GET /produktes/1/edit
   def edit
   end
@@ -71,6 +75,6 @@ class ProduktesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def produkte_params
       #params.require(:produkte).permit(:name,:image, :remote_image_url)
-      params.require(:produkte).permit(:name, :image, :remote_image_url)
+      params.require(:produkte).permit(:name)
     end
 end

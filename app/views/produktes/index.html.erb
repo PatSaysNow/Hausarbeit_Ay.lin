@@ -14,10 +14,11 @@
     <% @produktes.each do |produkte| %>
       <tr>
         <td><%= produkte.name %></td>
+        <td><%= image_tag produkte.image_url(:thumb) if produkte.image? %></td>
         
-        <td><%= link_to 'Show', produkte %></td>
-        <td><%= link_to 'Edit', edit_produkte_path(produkte) %></td>
-        <td><%= link_to 'Destroy', produkte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Zeigen', produkte %></td>
+        <td><%= link_to 'Einfügen', edit_produkte_path(produkte) %></td>
+        <td><%= link_to 'Löschen', produkte, method: :delete, data: { confirm: 'Sind Sie sich sicher?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Produkte', new_produkte_path %>
+<%= link_to 'Neues Bild Uploaden', new_produkte_path %>

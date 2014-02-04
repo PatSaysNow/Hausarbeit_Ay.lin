@@ -4,7 +4,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @produkte.name %>
+  <%= @produkte.name %><%= image_tag @produkte.image_url if @produkte.image? %>
 </p>
 
 <%= link_to 'Edit', edit_produkte_path(@produkte) %> |
