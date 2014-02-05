@@ -22,6 +22,7 @@ Kategorisierung
 
 Probleme:
 Verständnisprobleme --> aufgrund zum Vergleich von Java Programmierung
+Datebankschema--> neuanlegung
 Upload --> vorerst die Bilder in die Datenbank ohne Scaffold angelegt anschließend neu aufsetzen des Produkt Entitytypens Bild anzeigen ist weiterhin ein Problem beim Upload
 Rating--> Funktion konnte nicht erstellt werden
 Generell--> Zeitknappheit
