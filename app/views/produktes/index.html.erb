@@ -13,10 +13,12 @@
   <tbody>
     <% @produktes.each do |produkte| %>
       <tr>
-        <td><%= produkte.name %></td>
+        <td><%= produkte.name %>
+        </td>
         <td><%= image_tag produkte.image_url(:thumb) if produkte.image? %></td>
+          
         
-        <td><%= link_to 'Zeigen', produkte %></td>
+        <td><%= link_to 'Zeigen', produkte %> </td>
         <td><%= link_to 'Einfügen', edit_produkte_path(produkte) %></td>
         <td><%= link_to 'Löschen', produkte, method: :delete, data: { confirm: 'Sind Sie sich sicher?' } %></td>
       </tr>

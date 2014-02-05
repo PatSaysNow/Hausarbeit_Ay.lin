@@ -15,6 +15,7 @@
     <div class="field">
   <%= f.file_field :image %>
 </div>
+<%= image_tag @produkte.image_url if @produkte.image? %>
 <div class="field">
   <%= f.label :remote_image_url, "or image URL" %><br />
   <%= f.text_field :remote_image_url %>

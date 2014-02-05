@@ -5,6 +5,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
    include CarrierWave::MiniMagick
+ <%= image_tag @produkte.image_url if @produkte.image? %>
  version :normal do
   process :resize_to_fit => [300, 300]
 end

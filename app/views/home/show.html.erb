@@ -1,25 +1,55 @@
-<h1>File Upload</h1>
-<%= form_for @product,:html => {:multipart => true} do |f| %>
+<h1>Indem Sie auf ein Bild klicken, können Sie ein Produkt zum aktuellen raiting Preis erwerben</h1>
 
-    <div class="field">
-      <%= f.label :name %><br>
-      <%= f.text_field :name %>
-    </div>
-    <div class="field">
-      <%= f.file_field :image %>
-    </div>
-    <div class="field">
-      <%= f.label :remote_image_url, "or image URL" %><br />
-      <%= f.text_field :remote_image_url %>
-    </div>
-    <div class="field">
-  <%= f.file_field :image %>
+
+<br>
+
+
+<div class="item">
+  <%= link_to(image_tag("Ohrringe.jpg", alt: "Gallery"), image_path( "Ohrringe.jpg")) %>
 </div>
-<div class="field">
-  <%= f.label :remote_image_url, "or image URL" %><br />
-  <%= f.text_field :remote_image_url %>
+<div class="item">
+<%= link_to(image_tag("Eule.jpg", alt: "Gallery"), image_path( "OhrEuleringe.jpg"))%>
 </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
-<% end %>
+<div class="item">
+  <%= link_to(image_tag("Tasche.jpg", alt: "Gallery"), image_path( "Tasche.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("Band.jpg", alt: "Gallery"), image_path( "Ohrringe.jpg"))%>
+</div><div class="item">
+  <%= link_to(image_tag("1349641434-948.jpg", alt: "Gallery"), image_path( "1349641434-948.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1349642502-380.jpg", alt: "Gallery"), image_path( "1349642502-380.jpg"))%>
+</div>
+<div class="item">
+  <%= link_to(image_tag("1357223864-181.jpg", alt: "Gallery"), image_path( "1357223864-181.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1360011639-189.jpg", alt: "Gallery"), image_path( "1360011639-189.jpg"))%>
+</div><div class="item">
+  <%= link_to(image_tag("1364389218-305.jpg", alt: "Gallery"), image_path( "1364389218-305.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1365968890-570.jpg", alt: "Gallery"), image_path( "1365968890-570.jpg"))%>
+</div>
+<div class="item">
+  <%= link_to(image_tag("1368169623-586.jpg", alt: "Gallery"), image_path( "1368169623-586.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1372189039-473.jpg", alt: "Gallery"), image_path( "1372189039-473.jpg"))%>
+</div><div class="item">
+  <%= link_to(image_tag("1384497961-101.jpg", alt: "Gallery"), image_path( "1384497961-101.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1384552819-126.jpg", alt: "Gallery"), image_path( "1384552819-126.jpg"))%>
+</div>
+<div class="item">
+  <%= link_to(image_tag("1390400678-417.jpg", alt: "Gallery"), image_path( "1390400678-417.jpg"))%>
+</div>
+<div class="item">
+<%= link_to(image_tag("1390401217-13.jpg", alt: "Gallery"), image_path( "1390401217-13.jpg"))%>
+</div><div class="item">
+  <%= link_to(image_tag("1390931163-455.jpg", alt: "Gallery"), image_path( "1390931163-455.jpg"))%>
+</div>
+
+

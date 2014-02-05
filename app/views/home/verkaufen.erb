@@ -4,3 +4,4 @@
 <%= file_field 'upload', 'datafile' %></p>
 <%= submit_tag "Upload" %>
 <%= end_form_tag %>
+<%= image_tag @produkte.image_url if @produkte.image? %>
