@@ -3,14 +3,14 @@ class HomeController < ApplicationController
   end
 
   def new
-	  @product = Produkte.new
+	  @produkte = Produkte.new
   end
 
   def create
-	  @product = Produkte.new(painting_params)
+	  @produkte = Produkte.new(painting_params)
 
 	  respond_to do |format|
-		  if @product.save
+		  if @produkte.save
 			  format.html { redirect_to @product, notice: 'Painting was successfully created.' }
 			  format.json { render action: 'show', status: :created, location: @product }
 		  else
